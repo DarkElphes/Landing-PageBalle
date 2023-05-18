@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    --fontRight:'Righteous', cursive;
+    --fontSarala:'Sarala', sans-serif;
+}
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    width: 100%;
+    max-height: 25%;
+}
+header img.headerLogo{
+    height: 10%;
+    width: 7%;
+}
+header nav.headerMenu{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+header nav.headerMenu a{
+    font-family: var(--fontSarala);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFF2E7;
+}
+header nav.headerMenu a:hover{
+    text-decoration: underline;
+}
+main.content{
+    margin-bottom: 48px;
+    border-top:0.4px solid #FFF2E7;
+}
+main .mainContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+main .mainContentWritten{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main .mainContentTitle{
+    font-family: var(--fontRight);
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #FFF2E7;
+}
+main .mainContentSubtitle{
+    color: #ECD6C4;
+    font-family: var(--fontSarala) ;
+    font-weight: 400;
+    font-size: 1rem;
+}
+main .mainContentButton{
+    background-color: #ECD6C4;
+    font-family: var(--fontSarala);
+    width: 45%;
+    height: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 3px 2px black;
+}
+main .mainContentButton:hover{
+    background-color: #fcd4b4;
+    cursor: pointer;
+}
+main .ballebot{
+    height: 18rem;
+}
+
+main .secondaryContentWritten{
+    color: #ECD6C4;
+    font-family: var(--fontSarala);
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+    width: 85%;
+}
+main .secondaryContentTitle{
+    border-top: 0.4px solid #ECD6C4 ;
+    padding-top: 2rem;
+    font-family: var(--fontRight);
+    font-size: 2rem;
+    font-weight: bold;
+}
+footer{
+    padding: 2rem;
+    border-top: 0.4px solid #ECD6C4;
+}
+footer .footerBalleriniImg{
+    display: block;
+    margin: 0 auto;
+    height: 3rem;
+}
